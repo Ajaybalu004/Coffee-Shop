@@ -1,0 +1,279 @@
+/* Default code Starts here */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #eff2f7; */
+    /* font-family: "Merienda", serif; */
+    font-family: "Nunito Sans", serif;
+    color: rgb(33, 37, 41);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    /* -webkit-font-smoothing: antialiased; */
+    /* font-optical-sizing: auto; */
+}
+
+h1 {
+   
+    font-family: "Merienda", serif;
+    color: #212529;
+    font-size: 6.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: "Merienda", serif;
+    color: #212529;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+h6 {
+    font-family: "Nunito Sans", serif;
+    color: #212529;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+p {
+    font-family: "Nunito Sans", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+i {
+    color: #bf9c79;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #666666;
+    --darkColor: #333333;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 2.5rem;
+    --ffPrimary: "Nunito Sans", serif;
+    --ffSecondary: "Merienda", serif;
+}
+
+.componentSpacing {
+    padding: 3rem 0rem;
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+    /* column-gap: 1rem; */
+    /* row-gap: 1rem; */
+    gap: 3rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    gap: 2.5rem;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 5rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-start {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: start;
+    /* left & right Alignment */
+}
+
+
+header {
+    /* background-color: #13c6bd; */
+    width: 100%;
+    /* Full Screensize */
+    height: auto;
+    /* content Height */
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* background-color: #89f357; */
+    width: 100%;
+    height: auto;
+}
+
+.heroSection {
+    background: linear-gradient(90deg, white, transparent 70%), url(./assets/images/hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 33rem 0rem;
+}
+
+.heroSectionBody {
+    height: 100%;
+    width: 50%;
+}
+
+.heroSectionBox p{
+    width:717px;
+    height: 45px;
+    margin-bottom: 20px;
+    color: #212529;
+    font-family: "Nunito Sans", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+
+
+}
+
+.contactingBox,
+.formBox {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: none;
+}
+
+.cupBolck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupHeading {
+    width: 486px;
+    height: 80px;
+    color: #212529;
+    font-family: "Merienda", serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.cupBox p {
+    width: 486px;
+    height: 68px;
+    font-family: "Nunito Sans", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.cupBox button,
+.heroSectionBox button {
+
+    background-color: #be9c79;
+    cursor: pointer;
+    font-family: "Nunito Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: none;
+    color: #ffffff;
+}
