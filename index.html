@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Project title  -->
-  <title>Coffeeshop</title>
+  <title>Coffee Shop</title>
 
   <!-- favicon -->
   <link rel="fav icon" href="./assets/images/logo.png" type="image/x-icon" />
@@ -29,21 +29,22 @@
 <body>
   <header><!--1. parent container -->
     <nav class="navBar componentSpacing"><!-- 2.component -->
-      <div class="navbarContainer"><!--3. component container -->
-        <div class="navbarBody grid-2"><!-- 4.Row -->
-          <div class="navbarblock"><!-- 5.column -->
-            <div class="navbarBox"><!-- 6.subcolumn -->
+      <div class="navBarContainer screenSize"><!--3. component container -->
+        <div class="navBarBody grid-2"><!-- 4.Row -->
+          <div class="navBarLogoBlock"><!-- 5.column -->
+            <div class="navBarLogoBox dflex-start"><!-- 6.subcolumn -->
               <figure>
                 <img src="./assets/images/logo.png" alt="logo image" class="navLogo" />
               </figure>
             </div>
           </div>
-          <div class="navbargroupBlock"><!-- 5.column 1-->
-            <div class="navbargroupBox"><!-- 6.sub-column 1-->
-              <ul class="navList">
+          <div class="navBargroupBlock dflex"><!-- 5.column 1-->
+            <div class="navBargroupBox"><!-- 6.sub-column 1-->
+              <ul class="navList dflex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
@@ -52,8 +53,10 @@
         </div>
       </div>
     </nav>
+
+
     <div class="heroSection componentSpacing"><!-- 2.Component -->
-      <div class="heroSectionContainer screenSizing"><!-- 3.component container -->
+      <div class="heroSectionContainer screenSize"><!-- 3.component container -->
         <div class="heroSectionBody grid-1"> <!-- 4.Row -->
           <div class="heroSectionBlock "><!-- 5.Column -->
             <div class="heroSectionBox dflex-col"><!-- 6.Subcloumn -->
@@ -99,8 +102,8 @@
         <div class="facilityBody grid-1"><!-- 4.Row -->
           <div class="facilityBlock"><!-- 5.column -->
             <div class="facilityBox dflex-col"><!-- 6.sub column -->
-              <figure>
-                <img src="./assets/images/heading-img.jpg" alt="Our Facility" width="187px" height="40px" />
+              <figure class="headerimage">
+                <img src="./assets/images/heading-img.jpg" alt="Our Facility" />
               </figure>
               <h2>Our Facility</h2>
             </div>
@@ -160,7 +163,7 @@
         <div class="PopularmenuBody grid-1"><!-- 4.Row -->
           <div class="PopularmenuBlock"><!-- 5.column -->
             <div class="popularmenuBox dflex-col"> <!-- 6.subcolumn -->
-              <figure>
+              <figure class="headerimage">
                 <img src="./assets/images/heading-img.jpg" alt="Popular Menu" />
               </figure>
               <h2>Popular Menu</h2>
@@ -221,11 +224,11 @@
     </section>
 
     <section class="OurgalleryComponent componentSpacing"><!-- 2.component -->
-      <div class="Ourgallerycontainer screenSizing"><!-- 3.component container -->
+      <div class="Ourgallerycontainer screenSize"><!-- 3.component container -->
         <div class="OurgalleryBody grid-1"><!-- 4.Row 1 -->
           <div class="OurgalleryBlock"><!-- 5.column -->
             <div class="OurgalleryBox dflex-col"><!-- 6.Sub-column -->
-              <figure>
+              <figure class="headerimage">
                 <img src="./assets/images/heading-img.jpg" alt="Our Gallery" />
               </figure>
               <h2>Our Gallery</h2>
@@ -283,13 +286,13 @@
     </section>
 
     <section class="ourteamcomponent componentSpacing"><!-- 2.component -->
-      <div class="ourteamContainer screenSizing"><!-- 3.Componentcontainer -->
+      <div class="ourteamContainer screenSize"><!-- 3.Componentcontainer -->
         <div class="ourteamBody grid-1"><!-- 4.Row 1-->
           <div class="ourteamBlock"><!-- 5.column -->
             <div class="ourteamBox dflex-col"><!-- 6.sub-column -->
-              <figure>
+              <figure class="headerimage">
                 <img src="./assets/images/heading-img.jpg" alt="Our Team" />
-                <h1>Our Team</h1>
+                <h2>Our Team</h2>
               </figure>
             </div>
           </div>
@@ -347,16 +350,15 @@
       </div>
       </div>
     </section>
-
     <section class="contactusComponent componentSpacing"><!-- 2.component -->
-      <div class="contactusContainer screenSizing"> <!-- 3.component container -->
+      <div class="contactusContainer screenSize"> <!-- 3.component container -->
         <div class="contactusBody grid-1"><!-- 4.Row 1 -->
           <div class="contactusBlock"><!-- 5.column -->
             <div class="contactusBox dflex-col"><!-- 6.subcolumn -->
-              <figure>
+              <figure class="headerimage">
                 <img src="./assets/images/heading-img.jpg" alt="contact Us">
               </figure>
-              <h2>contact Us</h2>
+              <h2>Contact Us</h2>
             </div>
           </div>
         </div>
@@ -368,10 +370,10 @@
               </figure>
             </div>
           </div>
-          <div class="formBlock dflex"><!-- 5.column 2 -->
+          <div class="formBlock "><!-- 5.column 2 -->
             <div class="formBox"><!-- 6.sub column 2-->
               <h2>BOOK A TABLE</h2>
-              <form>
+              <form class="Bookinglist">
                 <div class="name">
                   <input type="text" placeholder="Enter your name">
                 </div>
@@ -384,14 +386,13 @@
                 <div class="feedback">
                   <textarea name="feedBack" id="" placeholder="Description"> </textarea>
                 </div>
-                <div class="button">
+                <div >
                   <button type="submit">Book</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -402,36 +403,43 @@
         <div class="contactBody grid-4"><!-- 4.Row 1-->
           <div class="contactBlock"><!-- 5.column 1-->
             <div class="contactBox dflex-col"><!-- 6.sub-column 1-->
-              <i class="fa-regular fa-envelope"></i>
-              <h6>Our Email</h6>
+              <div class="cardHeader"><i class="fa-regular fa-envelope"></i></div>
+              <div class="cardMain"><h6>Our Email</h6>
               <p>Shaakshi@gmail.com</p>
               <p>Hyhy@gmail.com</p>
+            </div>
             </div>
           </div>
           <div class="openhoursBlock dflex-col"><!-- 5.column 2-->
             <div class="openhoursBox "><!-- 6.sub column 2-->
-              <i class="fa-solid fa-business-time"></i>
+              <div class="cardHeader"><i class="fa-solid fa-business-time"></i></div>
+              <div class="cardMain">
               <h6>Opening Hours</h6>
               <p>07:00am to 09:00pm</p>
+              </div>
             </div>
           </div>
           <div class="locationBlock dflex-col"><!-- 5.column 3-->
             <div class="locationBox"><!-- 6.sub column 3-->
-              <i class="fa-solid fa-location-dot"></i>
+              <div class="cardHeader"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="cardMain">
               <h6>Shop Location</h6>
               <p>Mumbai, India- 400101</p>
+              </div>
             </div>
           </div>
           <div class="ournumberBlock dflex-col"><!-- 5.column 4-->
             <div class="ournumberBox"><!-- 6.sub-column 4-->
-              <i class="fa-solid fa-phone"></i>
+              <div class="cardHeader"><i class="fa-solid fa-phone"></i></div>
+              <div class="cardMain">
               <h6>Our Number</h6>
               <p>+91-123-456-7890</p>
               <p>+91-123-456-7890</p>
+              </div>
             </div>
           </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div class="copyrightBody grid-1"><!-- 4.Row 2-->
           <div class="copyrightBlock"><!-- 5.column 1-->
             <div class="copyrightBox"><!-- 6.sub-column 1 -->
